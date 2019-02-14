@@ -1,5 +1,5 @@
 import { findIndex } from "./sentinels";
-import { None, none, some } from "fp-ts/lib/Option";
+import { none, some } from "fp-ts/lib/Option";
 
 describe("sentinels", () => {
   it("should return none if no results", () => {
