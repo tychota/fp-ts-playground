@@ -20,7 +20,7 @@ describe("find", () => {
     // when
     const result = find(list, a => a === 2);
 
-    // except
+    // then
     expect(result).toEqual(some(2));
     expect(result.getOrElse(null)).toBe(2);
   });

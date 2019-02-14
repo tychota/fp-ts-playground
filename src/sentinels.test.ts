@@ -9,7 +9,7 @@ describe("sentinels", () => {
     // when
     const result = findIndex(list, a => a === 4);
 
-    // except
+    // then
     expect(result).toEqual(none);
     expect(result.getOrElse(-1)).toBe(-1);
   });

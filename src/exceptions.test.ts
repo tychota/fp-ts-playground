@@ -23,7 +23,7 @@ describe("exceptions", () => {
     // when
     const result = parse(json);
 
-    // except
+    // then
     const object = { a: 2 };
     expect(result).toEqual(right(object));
   });
