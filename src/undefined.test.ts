@@ -9,7 +9,7 @@ describe("find", () => {
     // when
     const result = find(list, a => a === 4);
 
-    // except
+    // then
     expect(result).toEqual(none);
     expect(result.getOrElse(null)).toBe(null);
   });
