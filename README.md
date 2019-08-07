@@ -49,7 +49,7 @@ A playground to test [gcanti's super article](https://dev.to/gcanti/interoperabi
 #### Use case: an API that performs an asynchronous computation
 
 - [Code](https://github.com/tychota/fp-ts-playground/blob/master/src/asynchronous_side_effect.ts)
-- ⚠️ I don't know how to test this, help me please :)
+- [Test](https://github.com/tychota/fp-ts-playground/blob/master/src/asynchronous_side_effect.test.ts)
 
 #### Use case: an API that performs an asynchronous computation and may reject
 

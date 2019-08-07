@@ -1,0 +1,335 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20190807.085030.31232.0.001.json",
+    "dumpEventTime": "2019-08-07T08:50:30Z",
+    "dumpEventTimeStamp": "1565164230169",
+    "processId": 31232,
+    "cwd": "/home/marcello/projects/0scratch/fp-ts-playground",
+    "commandLine": [
+      "/usr/bin/node",
+      "/home/marcello/projects/0scratch/fp-ts-playground/node_modules/jest-worker/build/workers/processChild.js"
+    ],
+    "nodejsVersion": "v11.15.0",
+    "glibcVersionRuntime": "2.29",
+    "glibcVersionCompiler": "2.29",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "11.15.0",
+      "v8": "7.0.276.38-node.19",
+      "uv": "1.30.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "67",
+      "nghttp2": "1.36.0",
+      "napi": "4",
+      "llhttp": "1.1.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v11.15.0/node-v11.15.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v11.15.0/node-v11.15.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.2.5-arch1-1-ARCH",
+    "osVersion": "#1 SMP PREEMPT Wed Jul 31 08:30:34 UTC 2019",
+    "osMachine": "x86_64",
+    "host": "novaarch"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000559dc8bc2a91",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, v8::Local<v8::String>) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000559dc8ab329f",
+      "symbol": "node::OnFatalError(char const*, char const*) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000559dc8c59002",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000559dc8c5925b",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000559dc8ff0573",
+      "symbol": " [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000559dc8ff06b4",
+      "symbol": " [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000559dc9000656",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000559dc9000ffe",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000559dc9003a1d",
+      "symbol": "v8::internal::Heap::AllocateRawWithLightRetry(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000559dc9003a72",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationSpace, v8::internal::AllocationAlignment) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000559dc8fd1685",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationSpace) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000559dc9240def",
+      "symbol": "v8::internal::Runtime_AllocateInNewSpace(int, v8::internal::Object**, v8::internal::Isolate*) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x000035389d64fc5d",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 1523400704,
+    "totalCommittedMemory": 1499804008,
+    "usedMemory": 1459795184,
+    "availableMemory": 20485728,
+    "memoryLimit": 1526909922,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 42224,
+        "capacity": 515584,
+        "used": 33520,
+        "available": 482064
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 11874576,
+        "capacity": 16498688,
+        "used": 1617880,
+        "available": 14880808
+      },
+      "old_space": {
+        "memorySize": 1481838592,
+        "committedMemory": 1481000232,
+        "capacity": 1455422632,
+        "used": 1453617024,
+        "available": 1805608
+      },
+      "code_space": {
+        "memorySize": 1572864,
+        "committedMemory": 1090432,
+        "capacity": 889312,
+        "used": 889312,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 2633728,
+        "committedMemory": 2519744,
+        "capacity": 1707760,
+        "used": 1707760,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 3276800,
+        "committedMemory": 3276800,
+        "capacity": 5246936,
+        "used": 1929688,
+        "available": 3317248
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 45.0255,
+    "kernelCpuSeconds": 1.08427,
+    "cpuConsumptionPercent": 124.621,
+    "maxRss": 1562943488,
+    "pageFaults": {
+      "IORequired": 19,
+      "IONotRequired": 453437
+    },
+    "fsActivity": {
+      "reads": 4112,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 22.4752,
+    "kernelCpuSeconds": 0.572797,
+    "cpuConsumptionPercent": 62.2918,
+    "fsActivity": {
+      "reads": 4112,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "SHELL": "/usr/bin/fish",
+    "QT_SCREEN_SCALE_FACTORS": "eDP-1=1;DP-1=1;HDMI-1=1;",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session1",
+    "FREETYPE_PROPERTIES": "truetype:interpreter-version=40",
+    "JAVA_HOME": "/usr/lib/jvm/java-11-openjdk",
+    "DESKTOP_SESSION": "/usr/share/xsessions/plasma",
+    "GTK_MODULES": "canberra-gtk-module",
+    "XDG_SEAT": "seat0",
+    "PWD": "/home/marcello",
+    "LOGNAME": "marcello",
+    "XDG_SESSION_DESKTOP": "KDE",
+    "XDG_SESSION_TYPE": "x11",
+    "MOZILLA_FIVE_HOME": "/usr/lib/firefox",
+    "XAUTHORITY": "/home/marcello/.Xauthority",
+    "HOME": "/home/marcello",
+    "LANG": "en_GB.UTF-8",
+    "XDG_CURRENT_DESKTOP": "KDE",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "KDE_SESSION_UID": "1000",
+    "XDG_SESSION_CLASS": "user",
+    "USER": "marcello",
+    "CUDA_PATH": "/opt/cuda",
+    "KDE_SESSION_VERSION": "5",
+    "PAM_KWALLET5_LOGIN": "/run/user/1000/kwallet5.socket",
+    "DISPLAY": ":0",
+    "SHLVL": "4",
+    "XDG_VTNR": "1",
+    "XDG_SESSION_ID": "2",
+    "GS_LIB": "/home/marcello/.fonts",
+    "MOZ_PLUGIN_PATH": "/usr/lib/mozilla/plugins",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "QT_AUTO_SCREEN_SCALE_FACTOR": "0",
+    "XCURSOR_THEME": "breeze_cursors",
+    "XDG_DATA_DIRS": "/usr/share:/usr/share:/usr/local/share",
+    "KDE_FULL_SESSION": "true",
+    "PATH": "/home/marcello/.npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "HG": "/usr/bin/hg",
+    "MAIL": "/var/spool/mail/marcello",
+    "_JAVA_OPTIONS": "-Dawt.useSystemAAFontSettings=lcd",
+    "_": "/opt/visual-studio-code/bin/../code",
+    "SESSION_MANAGER": "local/novaarch:@/tmp/.ICE-unix/1337,unix/novaarch:/tmp/.ICE-unix/1337",
+    "LANGUAGE": "",
+    "DESKTOP_STARTUP_ID": "novaarch;1564733168;921125;1454_TIME162417",
+    "VSCODE_IPC_HOOK": "/run/user/1000/vscode-8133df5f-1.36.1-main.sock",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"en-gb\",\"availableLanguages\":{},\"_languagePackSupport\":true}",
+    "VSCODE_LOGS": "/home/marcello/.config/Code/logs/20190802T090610",
+    "TERM_PROGRAM_VERSION": "1.36.1",
+    "NO_AT_BRIDGE": "1",
+    "CHROME_DESKTOP": "code-url-handler.desktop",
+    "TERM": "xterm-256color",
+    "TERM_PROGRAM": "vscode",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "VSCODE_CLI": "1",
+    "ELECTRON_NO_ATTACH_CONSOLE": "1",
+    "VSCODE_NODE_CACHED_DATA_DIR": "/home/marcello/.config/Code/CachedData/2213894ea0415ee8c85c5eea0d0ff81ecc191529",
+    "VSCODE_PID": "7549",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "PIPE_LOGGING": "true",
+    "VERBOSE_LOGGING": "true",
+    "VSCODE_IPC_HOOK_EXTHOST": "/tmp/vscode-ipc-66de363c-ab58-4e0a-bd07-af75d3b8e81e.sock",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_LOG_STACK": "false",
+    "VSCODE_PREVENT_FOREIGN_INSPECT": "true",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "WALLABY_PRODUCTION": "true",
+    "CI": "true",
+    "NODE_ENV": "test",
+    "JEST_WORKER_ID": "0"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 524288,
+      "hard": 524288
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 63621,
+      "hard": 63621
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/usr/lib/libz.so.1",
+    "/usr/lib/libuv.so.1",
+    "/usr/lib/libcares.so.2",
+    "/usr/lib/libnghttp2.so.14",
+    "/usr/lib/libcrypto.so.1.1",
+    "/usr/lib/libssl.so.1.1",
+    "/usr/lib/libicui18n.so.64",
+    "/usr/lib/libicuuc.so.64",
+    "/usr/lib/libdl.so.2",
+    "/usr/lib/librt.so.1",
+    "/usr/lib/libstdc++.so.6",
+    "/usr/lib/libm.so.6",
+    "/usr/lib/libgcc_s.so.1",
+    "/usr/lib/libpthread.so.0",
+    "/usr/lib/libc.so.6",
+    "/usr/lib/libnsl.so.2",
+    "/usr/lib/libicudata.so.64",
+    "/lib64/ld-linux-x86-64.so.2",
+    "/usr/lib/libtirpc.so.3",
+    "/usr/lib/libgssapi_krb5.so.2",
+    "/usr/lib/libkrb5.so.3",
+    "/usr/lib/libk5crypto.so.3",
+    "/usr/lib/libcom_err.so.2",
+    "/usr/lib/libkrb5support.so.0",
+    "/usr/lib/libkeyutils.so.1",
+    "/usr/lib/libresolv.so.2"
+  ]
+}
